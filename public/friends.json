@@ -1,0 +1,130 @@
+[
+    {
+        "id": 1,
+        "name": "Sarah Mitchell",
+        "picture": "https://randomuser.me/api/portraits/women/12.jpg",
+        "email": "sarah.mitchell@gmail.com",
+        "days_since_contact": 19,
+        "status": "overdue",
+        "tags": [
+            "college",
+            "close friend",
+            "travel buddy"
+        ],
+        "bio": "Met during freshman orientation. We backpacked through Southeast Asia together after graduation. She just moved to Vancouver for a new job in UX design.",
+        "goal": 14,
+        "next_due_date": "2026-04-10"
+    },
+    {
+        "id": 2,
+        "name": "Marcus Thompson",
+        "picture": "https://randomuser.me/api/portraits/men/34.jpg",
+        "email": "marcus.t@outlook.com",
+        "days_since_contact": 6,
+        "status": "on-track",
+        "tags": [
+            "work",
+            "mentor",
+            "basketball"
+        ],
+        "bio": "Former manager who became a genuine friend. We play pickup basketball every few weekends and grab coffee to talk career stuff. Incredibly thoughtful person.",
+        "goal": 14,
+        "next_due_date": "2026-04-20"
+    },
+    {
+        "id": 3,
+        "name": "Priya Nair",
+        "picture": "https://randomuser.me/api/portraits/women/45.jpg",
+        "email": "priya.nair88@yahoo.com",
+        "days_since_contact": 28,
+        "status": "overdue",
+        "tags": [
+            "childhood",
+            "family friend",
+            "close friend"
+        ],
+        "bio": "Grew up on the same street. Our families have been close for decades. She's a pediatric nurse in Chennai now and we try to video call at least twice a month.",
+        "goal": 21,
+        "next_due_date": "2026-04-05"
+    },
+    {
+        "id": 4,
+        "name": "Daniel Okafor",
+        "picture": "https://randomuser.me/api/portraits/men/58.jpg",
+        "email": "dan.okafor@protonmail.com",
+        "days_since_contact": 11,
+        "status": "almost due",
+        "tags": [
+            "college",
+            "roommate",
+            "tech"
+        ],
+        "bio": "College roommate for two years. Now a software engineer at a startup in Lagos. We bond over late-night debugging sessions over voice chat and sharing memes about broken builds.",
+        "goal": 10,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 5,
+        "name": "Leila Ahmadi",
+        "picture": "https://randomuser.me/api/portraits/women/67.jpg",
+        "email": "leila.ahmadi@gmail.com",
+        "days_since_contact": 4,
+        "status": "on-track",
+        "tags": [
+            "book club",
+            "neighbor",
+            "close friend"
+        ],
+        "bio": "Met through a local book club three years ago. We ended up becoming neighbors and now do weekly walks. She's a translator fluent in Farsi, French, and English.",
+        "goal": 7,
+        "next_due_date": "2026-04-17"
+    },
+    {
+        "id": 6,
+        "name": "Tom Nakashima",
+        "picture": "https://randomuser.me/api/portraits/men/23.jpg",
+        "email": "tom.nakashima@icloud.com",
+        "days_since_contact": 45,
+        "status": "overdue",
+        "tags": [
+            "high school",
+            "music",
+            "old friend"
+        ],
+        "bio": "Best friends in high school, bonded over playing guitar in a terrible band. He's now a session musician in Tokyo. We drift apart and reconnect in big bursts.",
+        "goal": 30,
+        "next_due_date": "2026-03-28"
+    },
+    {
+        "id": 7,
+        "name": "Amara Diallo",
+        "picture": "https://randomuser.me/api/portraits/women/29.jpg",
+        "email": "amara.diallo@gmail.com",
+        "days_since_contact": 8,
+        "status": "almost due",
+        "tags": [
+            "work",
+            "close friend",
+            "running"
+        ],
+        "bio": "Met at a 10K race two years ago and ended up at the same company six months later. We do long runs on Sunday mornings and debrief over brunch. She's training for her first marathon.",
+        "goal": 7,
+        "next_due_date": "2026-04-15"
+    },
+    {
+        "id": 8,
+        "name": "Elliot Vasquez",
+        "picture": "https://randomuser.me/api/portraits/men/77.jpg",
+        "email": "elliot.v@hey.com",
+        "days_since_contact": 13,
+        "status": "on-track",
+        "tags": [
+            "college",
+            "philosophy nerd",
+            "long-distance"
+        ],
+        "bio": "Met in a philosophy elective. Our conversations about ethics and free will kept going well past the class. He's now doing his PhD in Barcelona and we exchange voice memos instead of texts.",
+        "goal": 21,
+        "next_due_date": "2026-04-23"
+    }
+]
