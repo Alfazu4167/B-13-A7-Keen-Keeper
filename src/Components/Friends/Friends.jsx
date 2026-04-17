@@ -12,7 +12,7 @@ const Friends = () => {
             <h2 className='text-2xl mb-5'>Your Friends</h2>
             <div className='grid md:grid-cols-3 lg:grid-cols-4 gap-5 md:gap-10 '>
                 {
-                    loading ? <PropagateLoader color='#244d3f' className='flex justify-center items-center' />
+                    loading ? <div className='mx-auto'><PropagateLoader color='#244d3f' /></div>
                         :
                         friends.map(friend => <Card key={friend.id} friend={friend}></Card>)
                 }
