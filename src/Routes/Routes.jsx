@@ -7,6 +7,7 @@ import Timeline from "../Pages/Timeline/Timeline";
 import Homepage from "../Pages/Homepage/Homepage";
 import FriendDetails from "../Components/FriendDetails/FriendDetails";
 import Stats from "../Pages/Stats/Stats";
+import NotFoundPage from "../Components/NotFoundPage/NotFoundPage";
 
 
 
@@ -33,6 +34,7 @@ export const router = createBrowserRouter([
                 Component: FriendDetails,
                 loader: ()=> fetch("/friends.json")
             }
-        ]
+        ],
+        errorElement: <NotFoundPage></NotFoundPage>
     },
 ]);

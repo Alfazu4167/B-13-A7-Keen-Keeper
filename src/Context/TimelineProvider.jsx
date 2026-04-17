@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { TimelineContext } from './TImelineContext';
 
 const TimelineProvider = ({ children }) => {
-    const [timelines, setTimeline] = useState([]);
+    const [timelines, setTimelines] = useState([]);
     const [calls, setCalls] = useState([]);
     const [texts, setTexts] = useState([]);
     const [videos, setVideos] = useState([]);
@@ -16,7 +16,7 @@ const TimelineProvider = ({ children }) => {
         calls,
         texts,
         videos,
-        setTimeline,
+        setTimelines,
         setCalls,
         setTexts,
         setVideos,

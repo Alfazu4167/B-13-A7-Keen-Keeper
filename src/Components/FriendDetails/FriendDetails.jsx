@@ -7,6 +7,7 @@ import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { IoArchiveOutline, IoCallOutline, IoVideocamOutline } from 'react-icons/io5';
 import { MdOutlineMessage } from 'react-icons/md';
 import { TimelineContext } from '../../Context/TImelineContext';
+import { toast } from 'react-toastify';
 
 
 const FriendDetails = () => {
@@ -14,15 +15,15 @@ const FriendDetails = () => {
     const { id } = useParams();
     const friends = useLoaderData();
     const { timelines,
-        setTimeline,
+        setTimelines,
         calls,
         texts,
         videos,
         setCalls,
         setTexts,
         setVideos } = useContext(TimelineContext)
-    console.log(timelines);
-    console.log(calls, videos);
+    // console.log(timelines);
+    // console.log(calls, videos);
 
 
     const expectedFriend = friends.find(friend => friend.id == id)
@@ -32,17 +33,18 @@ const FriendDetails = () => {
     const handleTimeline = (params) => {
         if (params === "Call") {
             setCalls([...calls, params])
-            console.log(calls);
+            toast.success("Call is connected")
         } else if (params === "Text") {
             setTexts([...texts, params])
-            console.log(texts);
+           
         } else if (params === "Video") {
             setVideos([...videos, params])
-            console.log(videos);
+            
         }
-        const timelineData = { history: params, time: new Date(), name: name }
+        const timelineData = { type: params, time: new Date(), name: name }
 
-        setTimeline([...timelines, timelineData])
+        setTimelines([...timelines, timelineData])
+        console.log(timelines);
     }
     return (
         <div className='grid md:grid-cols-12 gap-10 my-20 container mx-auto items-center justify-center'>
@@ -98,7 +100,7 @@ const FriendDetails = () => {
                 <div className='flex justify-between shadow-md py-10 px-5 grow'>
                     <div className='space-y-3'>
                         <h3 className='text-2xl text-[#244d3f] '>Relationship Goal</h3>
-                        <p><span className='text-[#64748b] '>Connect every</span> 30 days</p>
+                        <p><span className='text-[#64748b] '>Connect every</span> {goal}</p>
                     </div>
                     <button className='btn'>Edit</button>
                 </div>

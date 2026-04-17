@@ -1,25 +1,23 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { TimelineContext } from '../../Context/TImelineContext';
 import TimelineCard from '../../Ui/TimelineCard';
 import { IoMdArrowDropdown } from 'react-icons/io';
 
 const Timeline = () => {
 
-    const [shortingType, setSortingType] = useState("")
-    const { timelines, setTimelines } = useContext(TimelineContext)
+    const [filteredType, setFilteredType] = useState("all");
+    const { timelines } = useContext(TimelineContext);
 
-
-    useEffect((shortingType) => {
-        if (shortingType) {
-            if (shortingType === "time") {
-                const sortList = [...timelines].sort((a, b) => b.time.toLocaleDateString() - a.time.toLocaleDateString())
-                setTimelines(sortList)
-            } else if (shortingType === "date") {
-                const sortList = [...timelines].sort((a, b) => a.time.toLocaleTimeString() - b.time.toLocaleTimeString())
-                setTimelines(sortList)
-            }
+    const filteredList = timelines.filter((item) => {
+        if (filteredType === "all") {
+            return true
         }
-    }, [setTimelines, timelines]    )
+        if (item.type.toLowerCase() === filteredType.toLocaleLowerCase()) {
+            return true;
+        } else {
+            return false
+        }
+    });
 
 
     return (
@@ -28,14 +26,16 @@ const Timeline = () => {
             <div className="dropdown ">
                 <div tabIndex={0} role="button" className="btn m-1 flex gap-2">Filter timeline <IoMdArrowDropdown></IoMdArrowDropdown> </div>
                 <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li onClick={() => setSortingType("time")}><a>Sort by Time</a></li>
-                    <li onClick={() => setSortingType("date")}><a>Sort by Date</a></li>
+                    <li onClick={() => setFilteredType("all")}><a>All timeline Data</a></li>
+                    <li onClick={() => setFilteredType("call")}><a>Filter by Call</a></li>
+                    <li onClick={() => setFilteredType("text")}><a>Filter by Text</a></li>
+                    <li onClick={() => setFilteredType("video")}><a>Filter by Video</a></li>
 
                 </ul>
             </div>
             <div className='space-y-5'>
                 {
-                    timelines.map((timeline, ind) => <TimelineCard key={ind} timeline={timeline}></TimelineCard>)
+                    filteredList.map((timeline, ind) => <TimelineCard key={ind} timeline={timeline}></TimelineCard>)
                 }
             </div>
 
