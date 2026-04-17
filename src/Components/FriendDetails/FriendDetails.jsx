@@ -30,18 +30,18 @@ const FriendDetails = () => {
     const { tags, status, days_since_contact, picture, name, bio, email, goal, next_due_date } = expectedFriend
     // console.log(expectedFriend);
 
-    const handleTimeline = (params) => {
-        if (params === "Call") {
-            setCalls([...calls, params])
-            toast.success("Call is connected")
-        } else if (params === "Text") {
-            setTexts([...texts, params])
-           
-        } else if (params === "Video") {
-            setVideos([...videos, params])
-            
+    const handleTimeline = (type) => {
+        if (type === "Call") {
+            setCalls([...calls, type])
+            toast.success(`${type} with ${name}`)
+        } else if (type === "Text") {
+            setTexts([...texts, type])
+            toast.success(`${type} with ${name}`)
+        } else if (type === "Video") {
+            setVideos([...videos, type])
+            toast.success(`${type} with ${name}`)
         }
-        const timelineData = { type: params, time: new Date(), name: name }
+        const timelineData = { type: type, time: new Date(), name: name }
 
         setTimelines([...timelines, timelineData])
         console.log(timelines);

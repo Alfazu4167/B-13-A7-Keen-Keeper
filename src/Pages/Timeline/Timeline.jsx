@@ -35,6 +35,10 @@ const Timeline = () => {
             </div>
             <div className='space-y-5'>
                 {
+                    timelines.length === 0? <div className='bg-base-300 min-h-[50vh] flex justify-center items-center rounded-md shadow'>
+                        <h2 className='text-3xl font-bold text-center text-slate-400'>Timeline history is empty</h2>
+                    </div>:
+
                     filteredList.map((timeline, ind) => <TimelineCard key={ind} timeline={timeline}></TimelineCard>)
                 }
             </div>
