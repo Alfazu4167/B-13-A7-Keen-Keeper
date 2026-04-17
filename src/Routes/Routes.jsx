@@ -2,10 +2,12 @@ import { createBrowserRouter } from "react-router";
 import Root from "../Root";
 
 
-import Stats from "../Pages/Stats/Stats";
+
 import Timeline from "../Pages/Timeline/Timeline";
 import Homepage from "../Pages/Homepage/Homepage";
 import FriendDetails from "../Components/FriendDetails/FriendDetails";
+import Stats from "../Pages/Stats/Stats";
+
 
 
 

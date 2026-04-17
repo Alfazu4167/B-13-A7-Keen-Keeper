@@ -15,13 +15,13 @@ const Navbar = () => {
             <div className="flex-none">
                 <ul className="menu menu-horizontal px-1 items-center gap-3">
                     <li>
-                        <NavLink to={"/"} className={({ isActive }) => `font-semibold flex items-center text-[#64748b] ${isActive ? "btn bg-[#244d3f] text-white" : ""}`}> <span className='text-[20px]'><RiHome2Line></RiHome2Line></span> Home</NavLink>
+                        <NavLink to={"/"} className={({ isActive }) => `font-semibold flex items-center  ${isActive ? "btn bg-[#244d3f] text-white" : "text-[#64748b]"}`}> <span className='text-[20px]'><RiHome2Line></RiHome2Line></span> Home</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/timeline"} className={({ isActive }) => `font-semibold flex items-center text-[#64748b] ${isActive ? "btn bg-[#244d3f] text-white" : ""}`}> <span className='text-[18px]'><IoTimeOutline></IoTimeOutline></span> Timeline</NavLink>
+                        <NavLink to={"/timeline"} className={({ isActive }) => `font-semibold flex items-center text-[#64748b] ${isActive ? "btn bg-[#244d3f] text-white" : "text-[#64748b]"}`}> <span className='text-[18px]'><IoTimeOutline></IoTimeOutline></span> Timeline</NavLink>
                     </li>
                     <li>
-                        <NavLink to={"/stats"} className={({ isActive }) => `font-semibold flex items-center text-[#64748b] ${isActive ? "btn bg-[#244d3f] text-white" : ""}`}> <span className=''><ImStatsDots></ImStatsDots></span> Stats</NavLink>
+                        <NavLink to={"/stats"} className={({ isActive }) => `font-semibold flex items-center text-[#64748b] ${isActive ? "btn bg-[#244d3f] text-white" : "text-[#64748b]"}`}> <span className=''><ImStatsDots></ImStatsDots></span> Stats</NavLink>
                     </li>
 
                 </ul>

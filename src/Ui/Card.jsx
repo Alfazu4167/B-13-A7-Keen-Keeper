@@ -4,14 +4,8 @@ import { Link } from 'react-router';
 const Card = ({ friend }) => {
     const { id, tags, status, days_since_contact, picture, name } = friend;
 
-    const handleStatusColor= (stats)=>{
-        if (status=== "Overdue") {
-        background: "red"
-        }
-    }
-
     return (
-        <Link to={`/friends/${id}`} className='p-10 shadow text-center space-y-3'>
+        <Link to={`/friends/${id}`} className='p-5 shadow text-center space-y-3'>
             <div className='rounded-full'>
                 <img src={picture} alt={name} className='mx-auto rounded-full p-4 w-auto h-auto ' />
             </div>
@@ -24,7 +18,7 @@ const Card = ({ friend }) => {
                     )
                 }
             </div>
-            <h3 className="" >{status}</h3>
+            <h3 className={` badge p-3 rounded-[100px] ${status === "Overdue" && "bg-red-500 text-white"} ${status === "Almost Due" && "bg-[#EFAD44] text-white"} ${status === "On-Track" && "bg-[#244d3f] text-white"}`} >{status}</h3>
         </Link>
     );
 };

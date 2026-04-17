@@ -9,7 +9,7 @@
         "tags": [
             "CLOSE FRIEND"
         ],
-        "bio": "Met during freshman orientation. We backpacked through Southeast Asia together after graduation. She just moved to Vancouver for a new job in UX design.",
+        "bio": "College friend. Backpacked Southeast Asia together.",
         "goal": 14,
         "next_due_date": "2026-04-10"
     },
@@ -24,7 +24,7 @@
             "WORK",
             "MENTOR"
         ],
-        "bio": "Former manager who became a genuine friend. We play pickup basketball every few weekends and grab coffee to talk career stuff. Incredibly thoughtful person.",
+        "bio": "Former manager turned friend. Bond over basketball and coffee.",
         "goal": 14,
         "next_due_date": "2026-04-20"
     },
@@ -38,7 +38,7 @@
         "tags": [
             "FAMILY FRIEND"
         ],
-        "bio": "Grew up on the same street. Our families have been close for decades. She's a pediatric nurse in Chennai now and we try to video call at least twice a month.",
+          "bio": "Childhood neighbor. Nurse in Chennai.",
         "goal": 21,
         "next_due_date": "2026-04-05"
     },
@@ -53,7 +53,7 @@
             "COLLEGE",
             "ROOMMATE"
         ],
-        "bio": "College roommate for two years. Now a software engineer at a startup in Lagos. We bond over late-night debugging sessions over voice chat and sharing memes about broken builds.",
+       "bio": "College roommate. Software engineer in Lagos.",
         "goal": 10,
         "next_due_date": "2026-04-15"
     },
@@ -67,7 +67,7 @@
         "tags": [
             "BOOK CLUB"
         ],
-        "bio": "Met through a local book club three years ago. We ended up becoming neighbors and now do weekly walks. She's a translator fluent in Farsi, French, and English.",
+       "bio": "Met at a book club. Neighbor and translator.",
         "goal": 7,
         "next_due_date": "2026-04-17"
     },
@@ -81,7 +81,7 @@
         "tags": [
             "OLD FRIEND"
         ],
-        "bio": "Best friends in high school, bonded over playing guitar in a terrible band. He's now a session musician in Tokyo. We drift apart and reconnect in big bursts.",
+        "bio": "High school best friend. Musician in Tokyo.",
         "goal": 30,
         "next_due_date": "2026-03-28"
     },
@@ -95,7 +95,7 @@
         "tags": [
             "WORK"
         ],
-        "bio": "Met at a 10K race two years ago and ended up at the same company six months later. We do long runs on Sunday mornings and debrief over brunch. She's training for her first marathon.",
+        "bio": "Met at a race. Running buddy and coworker.",
         "goal": 7,
         "next_due_date": "2026-04-15"
     },
@@ -109,7 +109,7 @@
         "tags": [
             "LONG-DISTANCE"
         ],
-        "bio": "Met in a philosophy elective. Our conversations about ethics and free will kept going well past the class. He's now doing his PhD in Barcelona and we exchange voice memos instead of texts.",
+          "bio": "Met in philosophy class. PhD student in Barcelona.",
         "goal": 21,
         "next_due_date": "2026-04-23"
     }
