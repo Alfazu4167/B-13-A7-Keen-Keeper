@@ -7,7 +7,7 @@ import { RiDeleteBinLine, RiNotificationSnoozeLine } from 'react-icons/ri';
 import { IoArchiveOutline, IoCallOutline, IoVideocamOutline } from 'react-icons/io5';
 import { MdOutlineMessage } from 'react-icons/md';
 import { TimelineContext } from '../../Context/TImelineContext';
-import { toast } from 'react-toastify';
+import { Bounce, toast } from 'react-toastify';
 
 
 const FriendDetails = () => {
@@ -33,13 +33,43 @@ const FriendDetails = () => {
     const handleTimeline = (type) => {
         if (type === "Call") {
             setCalls([...calls, type])
-            toast.success(`${type} with ${name}`)
+            toast.success(`${type} with ${name}`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
         } else if (type === "Text") {
             setTexts([...texts, type])
-            toast.success(`${type} with ${name}`)
+            toast.success(`${type} with ${name}`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
         } else if (type === "Video") {
             setVideos([...videos, type])
-            toast.success(`${type} with ${name}`)
+            toast.success(`${type} with ${name}`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+            });
         }
         const timelineData = { type: type, time: new Date(), name: name }
 

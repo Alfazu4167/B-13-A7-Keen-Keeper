@@ -26,7 +26,6 @@ const Timeline = () => {
             <div className="dropdown ">
                 <div tabIndex={0} role="button" className="btn m-1 flex gap-2">Filter timeline <IoMdArrowDropdown></IoMdArrowDropdown> </div>
                 <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-                    <li onClick={() => setFilteredType("all")}><a>All timeline Data</a></li>
                     <li onClick={() => setFilteredType("call")}><a>Filter by Call</a></li>
                     <li onClick={() => setFilteredType("text")}><a>Filter by Text</a></li>
                     <li onClick={() => setFilteredType("video")}><a>Filter by Video</a></li>
@@ -35,11 +34,11 @@ const Timeline = () => {
             </div>
             <div className='space-y-5'>
                 {
-                    timelines.length === 0? <div className='bg-base-300 min-h-[50vh] flex justify-center items-center rounded-md shadow'>
+                    timelines.length === 0 ? <div className='bg-base-300 min-h-[50vh] flex justify-center items-center rounded-md shadow'>
                         <h2 className='text-3xl font-bold text-center text-slate-400'>Timeline history is empty</h2>
-                    </div>:
+                    </div> :
 
-                    filteredList.map((timeline, ind) => <TimelineCard key={ind} timeline={timeline}></TimelineCard>)
+                        filteredList.map((timeline, ind) => <TimelineCard key={ind} timeline={timeline}></TimelineCard>)
                 }
             </div>
 
